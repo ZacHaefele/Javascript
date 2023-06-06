@@ -92,55 +92,7 @@ if (isNaN(age)) {
   }
 }
 
-////////////////////////////////////
-// Coding Challenge #1
 
-/*
-Mark and John are trying to compare their BMI (Body Mass Index), which is calculated using the formula: BMI = mass / height ** 2 = mass / (height * height). (mass in kg and height in meter).
-
-1. Store Mark's and John's mass and height in variables
-2. Calculate both their BMIs using the formula (you can even implement both versions)
-3. Create a boolean variable 'markHigherBMI' containing information about whether Mark has a higher BMI than John.
-
-TEST DATA 1: Marks weights 78 kg and is 1.69 m tall. John weights 92 kg and is 1.95 m tall.
-TEST DATA 2: Marks weights 95 kg and is 1.88 m tall. John weights 85 kg and is 1.76 m tall.
-
-GOOD LUCK 😀
-*/
-
-
-var markWeight = 78; // Weight in KG //
-var markHeight = 1.69; // Height in M //
-
-var johnWeight = 92; // Weigth in KG //
-var johnHeight = 1.95; // Height in M //
-
-var markBMI = markWeight / markHeight ** 2;
-console.log("markBMI", markBMI);
-
-var johnBMI = johnWeight / markHeight ** 2;
-console.log("johnBMI", johnBMI);
-
-var markHigherBMI = markBMI > johnBMI;
-console.log(markHigherBMI);
-
-function calculateBMI({ weight, height }) {
-  var BMI = weight / height ** 2;
-  return BMI;
-}
-
-function calculateBMIsimple({ weight, height }) {
-  var simpleBMI = calculateBMI({ weight, height }).toFixed(2);
-  return simpleBMI;
-}
-
-var zacWeight = 39; //  Weight in KG //
-var zacHeight = 1.6; // Height in M //
-
-var zacBMI = calculateBMI({ weight: zacWeight, height: zacHeight });
-console.log(zacBMI);
-var zacBMIsimple = calculateBMIsimple({ weight: zacWeight, height: zacHeight });
-console.log(zacBMIsimple);
 
 function areYouMySister({ Name }) {
   var randomName = Name;
