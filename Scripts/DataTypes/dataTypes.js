@@ -55,6 +55,42 @@ function calculateYear() {
     console.log("Year:", 2010 + age);
   }
 }
+  
+    
+
+
+ // Console Logs print messages to the console //
+
+console.log(myAge + ageInFiveYears)
+console.log(myName+' '+myBirthday)
+console.log(sisterAge + sisterAgeInFiveYears)
+console.log(sisterName+' '+myName+' '+sisterBirthday)
+console.log(sisterName+' '+myName+' '+sisterBirthday)
+console.log(momName+' '+myName+' '+momBirthday)
+console.log(currentYear + momAgeInFiveYears)
+console.log(momAge + momAgeInFiveYears)
+
+function calculateYear(){
+
+// Retrieve the textbox element by ID
+var ageTextbox = document.getElementById('age');
+
+// Get the value from the textbox
+var ageValue = ageTextbox.value;
+
+// Parse the value as an integer
+var age = parseInt(ageValue, 10);
+
+// Check if the parsed value is a valid integer
+if (isNaN(age)) {
+    // Invalid input, handle the error
+    console.log('Invalid age input');
+  } else {
+    // Valid integer value
+    console.log('Year:', 2010+age);
+
+  }
+}
 
 ////////////////////////////////////
 // Coding Challenge #1
@@ -71,6 +107,7 @@ TEST DATA 2: Marks weights 95 kg and is 1.88 m tall. John weights 85 kg and is 1
 
 GOOD LUCK 😀
 */
+
 
 var markWeight = 78; // Weight in KG //
 var markHeight = 1.69; // Height in M //
@@ -146,4 +183,6 @@ areYouMySisterComplicated({
   favouriteColour: "pink",
   name: "Summer Jo",
   age: 4,
-});
+}); 
+
+
