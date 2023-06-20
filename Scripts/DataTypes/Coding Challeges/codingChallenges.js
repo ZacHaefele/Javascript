@@ -114,3 +114,5 @@ whoWonIWannaKnow({
   dolphinsAverageScore: dolphinsScore2,
   koalasAverageScore: koalasScore2,
 });
+
+// End of coding Challenge 3 //
