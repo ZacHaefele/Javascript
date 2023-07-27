@@ -173,6 +173,6 @@ switch (day) {
     console.log(`Doesn't Exist Bruv`);
   }
 }
-whatDayIsItIJustWokeUpFromAComa('F riday')
+whatDayIsItIJustWokeUpFromAComa('Friday')
 
 
