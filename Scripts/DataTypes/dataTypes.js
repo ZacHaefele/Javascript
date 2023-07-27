@@ -55,44 +55,37 @@ function calculateYear() {
     console.log("Year:", 2010 + age);
   }
 }
-  
-    
 
+// Console Logs print messages to the console //
 
- // Console Logs print messages to the console //
+console.log(myAge + ageInFiveYears);
+console.log(myName + " " + myBirthday);
+console.log(sisterAge + sisterAgeInFiveYears);
+console.log(sisterName + " " + myName + " " + sisterBirthday);
+console.log(sisterName + " " + myName + " " + sisterBirthday);
+console.log(momName + " " + myName + " " + momBirthday);
+console.log(currentYear + momAgeInFiveYears);
+console.log(momAge + momAgeInFiveYears);
 
-console.log(myAge + ageInFiveYears)
-console.log(myName+' '+myBirthday)
-console.log(sisterAge + sisterAgeInFiveYears)
-console.log(sisterName+' '+myName+' '+sisterBirthday)
-console.log(sisterName+' '+myName+' '+sisterBirthday)
-console.log(momName+' '+myName+' '+momBirthday)
-console.log(currentYear + momAgeInFiveYears)
-console.log(momAge + momAgeInFiveYears)
+function calculateYear() {
+  // Retrieve the textbox element by ID
+  var ageTextbox = document.getElementById("age");
 
-function calculateYear(){
+  // Get the value from the textbox
+  var ageValue = ageTextbox.value;
 
-// Retrieve the textbox element by ID
-var ageTextbox = document.getElementById('age');
+  // Parse the value as an integer
+  var age = parseInt(ageValue, 10);
 
-// Get the value from the textbox
-var ageValue = ageTextbox.value;
-
-// Parse the value as an integer
-var age = parseInt(ageValue, 10);
-
-// Check if the parsed value is a valid integer
-if (isNaN(age)) {
+  // Check if the parsed value is a valid integer
+  if (isNaN(age)) {
     // Invalid input, handle the error
-    console.log('Invalid age input');
+    console.log("Invalid age input");
   } else {
     // Valid integer value
-    console.log('Year:', 2010+age);
-
+    console.log("Year:", 2010 + age);
   }
 }
-
-
 
 function areYouMySister({ Name }) {
   var randomName = Name;
@@ -135,6 +128,51 @@ areYouMySisterComplicated({
   favouriteColour: "pink",
   name: "Summer Jo",
   age: 4,
-}); 
+});
+
+function howISpendMyWeek(day) {
+  if (day === "monday") {
+    console.log("Play Roblox");
+  } else if (day === "tuesday") {
+    console.log("Coding with Austen");
+  } else if (day === "wednesday" || day === "thursday") {
+    console.log("Either Coding with Austen again or Play Roblox");
+  } else if (day === "friday") {
+    console.log("Watch new iCarly 2021 Episode");
+  } else if (day === "saturday" || day === "sunday") {
+    console.log("Either Battle Bunker or Skateboarding");
+  } else {
+    console.log("Doesn't Exist Bruv");
+  }
+}
+
+function whatDayIsItIJustWokeUpFromAComa(day){
+
+  ////////////////////////////////////
+// The switch Statement
+
+switch (day) {
+  case 'monday':
+    console.log('Play Roblox');
+    break;
+  case 'tuesday':
+    console.log('Coding with Austen');
+    break;
+  case 'wednesday':
+  case 'thursday':
+    console.log('Either Coding with Austen again or Play Roblox');
+    break;
+  case 'friday':
+    console.log('Watch new iCarly 2021 Episode');
+    break;
+  case 'saturday':
+  case 'sunday':
+    console.log('Either Battle Bunker or Skateboarding');
+    break;
+  default:
+    console.log(`Doesn't Exist Bruv`);
+  }
+}
+whatDayIsItIJustWokeUpFromAComa('F riday')
 
 
